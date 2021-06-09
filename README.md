@@ -1,4 +1,4 @@
-# dev_quiz
+# DevQuiz
 
 Aplicação desenvolvida no NLW 05 da Rocketseat.
 
