@@ -72,7 +72,7 @@ class _ChallengePageState extends State<ChallengePage> {
                 label: "Pular",
                 onTap: () {
                   pageController.nextPage(
-                      duration: Duration(milliseconds: 100),
+                      duration: Duration(milliseconds: 200),
                       curve: Curves.linear);
                 },
               )),
