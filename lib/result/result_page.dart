@@ -4,7 +4,15 @@ import 'package:dev_quiz/core/app_text_styles.dart';
 import 'package:flutter/material.dart';
 
 class ResultPage extends StatelessWidget {
-  const ResultPage({Key? key}) : super(key: key);
+  final String title;
+  final int length;
+  final int result;
+  const ResultPage(
+      {Key? key,
+      required this.title,
+      required this.length,
+      required this.result})
+      : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -32,11 +40,11 @@ class ResultPage extends StatelessWidget {
                       style: AppTextStyles.body,
                       children: [
                         TextSpan(
-                          text: "\nGerenciamento de Estado",
+                          text: "\n$title",
                           style: AppTextStyles.bodyBold,
                         ),
                         TextSpan(
-                          text: "\ncom 6 de 10 acertos",
+                          text: "\ncom $result de $length acertos",
                           style: AppTextStyles.body,
                         ),
                       ]),
